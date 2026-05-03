@@ -92,8 +92,8 @@ export const Slide06Features = () => {
          <span className="text-primary font-mono text-xs">{"// what it can do"}</span>
        </div>
        <div className="w-full flex flex-col items-center">
-         <h2 className="text-xl md:text-2xl font-bold font-display mb-1 text-center text-text">It's not a chatbot.</h2>
-         <p className="text-sm text-dim mb-4 text-center w-full">It's an agent with a full toolkit.</p>
+         <h2 className="text-xl md:text-2xl font-bold font-display mb-1 text-center text-text">It&apos;s not a chatbot.</h2>
+         <p className="text-sm text-dim mb-4 text-center w-full">It&apos;s an agent with a full toolkit.</p>
 
          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 w-full max-w-5xl">
             {feats.map((f, idx) => (
@@ -126,8 +126,8 @@ export const Slide07Limitations = () => {
          </div>
          
          <div className="w-full">
-           <h2 className="text-4xl font-bold font-display mb-2 text-text">We're building in public.</h2>
-           <p className="text-xl text-dim mb-8">Here's what doesn't work yet.</p>
+           <h2 className="text-4xl font-bold font-display mb-2 text-text">We&apos;re building in public.</h2>
+           <p className="text-xl text-dim mb-8">Here&apos;s what doesn&apos;t work yet.</p>
            
            <div className="grid grid-cols-1 md:grid-cols-5 gap-8 w-full max-w-6xl">
               <div className="md:col-span-3 grid grid-cols-1 gap-3">
@@ -135,7 +135,7 @@ export const Slide07Limitations = () => {
                    { t: "Memory is explicit", d: "No auto-inject every prompt. We chose simplicity first. You decide when to remember." },
                    { t: "Simple Top-K Retrieval", d: "No reranker. Cosine similarity only. Smarter retrieval is coming." },
                    { t: "Gemini Only", d: "Model support is restricted to Gemini. OpenAI, Claude, and local Ollama are next." },
-                   { t: "No GUI (Yet)", d: "Pure terminal. If you don't like the shell, this isn't for you. TUI planned." }
+                   { t: "No GUI (Yet)", d: "Pure terminal. If you don&apos;t like the shell, this isn&apos;t for you. TUI planned." }
                  ].map((lim, i) => (
                    <div key={i} className="flex flex-col border-l-2 border-red-200 hover:border-red-500 pl-5 py-2 transition-colors">
                       <h4 className="text-lg font-bold text-text mb-1">{lim.t}</h4>
@@ -147,7 +147,7 @@ export const Slide07Limitations = () => {
               <div className="md:col-span-2 flex items-center">
                  <div className="bg-red-50 border border-red-100 p-6 rounded-2xl w-full">
                     <p className="text-lg font-serif italic tracking-tight text-red-900 leading-relaxed">
-                       "We'd rather ship something real and tell you what's missing than oversell and underdeliver. Every limitation here is a known roadmap item, not a surprise."
+                       &quot;We&apos;d rather ship something real and tell you what&apos;s missing than oversell and underdeliver. Every limitation here is a known roadmap item, not a surprise.&quot;
                     </p>
                  </div>
               </div>

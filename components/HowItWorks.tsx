@@ -12,7 +12,7 @@ export function HowItWorks() {
       icon: Terminal,
       title: "Install in 30 seconds.",
       desc: "Clone, build, and drop the binary in your PATH. No npm, no pip, no Docker. Pure Go.",
-      code: `git clone https://github.com/real-zephex/ask-go.git
+      code: `git clone https://github.com/HexaCipher/efos-hackathon.git
 cd ask-go && go build -o ask
 sudo mv ask /usr/local/bin/
 export GEMINI_API_KEY="your_key"`

@@ -47,7 +47,7 @@ export function Navbar() {
             </a>
           ))}
           <a
-            href="https://github.com/real-zephex/ask-go"
+            href="https://github.com/HexaCipher/efos-hackathon"
             target="_blank"
             rel="noopener noreferrer"
             className="font-body text-[14px] font-medium text-dim hover:text-text transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50 rounded px-2 py-1"
@@ -92,7 +92,7 @@ export function Navbar() {
               </a>
             ))}
             <a
-              href="https://github.com/real-zephex/ask-go"
+              href="https://github.com/HexaCipher/efos-hackathon"
               target="_blank"
               rel="noopener noreferrer"
               className="font-body text-[15px] font-medium text-dim hover:text-text hover:bg-surface2 px-4 py-3 rounded-lg transition-colors border-b border-border/50"

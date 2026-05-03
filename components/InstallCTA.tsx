@@ -6,7 +6,7 @@ import { Copy, Check, Star, BookOpen } from "lucide-react";
 
 export function InstallCTA() {
   const [copied, setCopied] = useState(false);
-  const installCmd = "git clone https://github.com/real-zephex/ask-go.git && cd ask-go && go build -o ask";
+  const installCmd = "git clone https://github.com/HexaCipher/efos-hackathon.git && cd ask-go && go build -o ask";
 
   const handleCopy = async () => {
     try {
@@ -52,7 +52,7 @@ export function InstallCTA() {
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mt-10">
           <a
-            href="https://github.com/real-zephex/ask-go"
+            href="https://github.com/HexaCipher/efos-hackathon"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 bg-surface2 border border-border2 text-text text-[14px] font-semibold px-6 py-3.5 rounded-lg hover:bg-surface hover:border-cyan/30 transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan/50"
@@ -61,7 +61,7 @@ export function InstallCTA() {
             Star on GitHub
           </a>
           <a
-            href="https://github.com/real-zephex/ask-go#readme"
+            href="https://github.com/HexaCipher/efos-hackathon#readme"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 border border-border2 text-dim text-[14px] px-6 py-3.5 rounded-lg hover:bg-surface2 hover:text-text transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan/50"

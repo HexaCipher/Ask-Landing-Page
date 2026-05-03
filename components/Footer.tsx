@@ -16,10 +16,10 @@ export function Footer() {
 
         {/* Center Links */}
         <nav className="flex flex-wrap justify-center gap-6">
-          <a href="https://github.com/real-zephex/ask-go" target="_blank" rel="noopener noreferrer" className="font-body text-[14px] text-muted hover:text-primary transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50 rounded">GitHub</a>
-          <a href="https://github.com/real-zephex/ask-go/blob/main/LICENSE" target="_blank" rel="noopener noreferrer" className="font-body text-[14px] text-muted hover:text-primary transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50 rounded">MIT License</a>
-          <a href="https://github.com/real-zephex/ask-go/issues" target="_blank" rel="noopener noreferrer" className="font-body text-[14px] text-muted hover:text-primary transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50 rounded">Issues</a>
-          <a href="https://github.com/real-zephex/ask-go/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer" className="font-body text-[14px] text-muted hover:text-primary transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50 rounded">Contributing</a>
+          <a href="https://github.com/HexaCipher/efos-hackathon" target="_blank" rel="noopener noreferrer" className="font-body text-[14px] text-muted hover:text-primary transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50 rounded">GitHub</a>
+          <a href="https://github.com/HexaCipher/efos-hackathon/blob/main/LICENSE" target="_blank" rel="noopener noreferrer" className="font-body text-[14px] text-muted hover:text-primary transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50 rounded">MIT License</a>
+          <a href="https://github.com/HexaCipher/efos-hackathon/issues" target="_blank" rel="noopener noreferrer" className="font-body text-[14px] text-muted hover:text-primary transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50 rounded">Issues</a>
+          <a href="https://github.com/HexaCipher/efos-hackathon/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer" className="font-body text-[14px] text-muted hover:text-primary transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50 rounded">Contributing</a>
         </nav>
 
         {/* Right */}

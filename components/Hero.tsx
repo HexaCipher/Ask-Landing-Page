@@ -60,7 +60,7 @@ export function Hero() {
             Start Learning Now →
           </a>
           <a
-            href="https://github.com/real-zephex/ask-go"
+            href="https://github.com/HexaCipher/efos-hackathon"
             target="_blank"
             rel="noopener noreferrer"
             className="w-full sm:w-auto border border-border2 text-dim text-[15px] font-body font-medium px-8 py-3.5 rounded-full hover:bg-surface2 hover:text-text transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-border2"

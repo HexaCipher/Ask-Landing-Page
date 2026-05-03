@@ -17,10 +17,11 @@ export function Navbar() {
   }, []);
 
   const navLinks = [
-    { name: "Features", href: "/#features" },
-    { name: "How it works", href: "/#how-it-works" },
-    { name: "Architecture", href: "/#architecture" },
-    { name: "Presentation", href: "/presentation" },
+    { name: "Features", href: "/#features", external: false },
+    { name: "How it works", href: "/#how-it-works", external: false },
+    { name: "Architecture", href: "/#architecture", external: false },
+    { name: "Presentation", href: "/presentation", external: false },
+    { name: "Demo Video", href: "https://drive.google.com/file/d/1P7rr3ge4hAPQr1BoXXHOfW__yYliFg0a/view?usp=sharing", external: true },
   ];
 
   return (
@@ -41,6 +42,8 @@ export function Navbar() {
             <a
               key={link.name}
               href={link.href}
+              target={link.external ? "_blank" : undefined}
+              rel={link.external ? "noopener noreferrer" : undefined}
               className="font-body text-[14px] font-medium text-dim hover:text-text transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50 rounded px-2 py-1"
             >
               {link.name}
@@ -85,6 +88,8 @@ export function Navbar() {
               <a
                 key={link.name}
                 href={link.href}
+                target={link.external ? "_blank" : undefined}
+                rel={link.external ? "noopener noreferrer" : undefined}
                 className="font-body text-[15px] font-medium text-dim hover:text-text hover:bg-surface2 px-4 py-3 rounded-lg transition-colors border-b border-border/50 last:border-none"
                 onClick={() => setIsMobileMenuOpen(false)}
               >

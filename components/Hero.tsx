@@ -65,7 +65,15 @@ export function Hero() {
             rel="noopener noreferrer"
             className="w-full sm:w-auto border border-border2 text-dim text-[15px] font-body font-medium px-8 py-3.5 rounded-full hover:bg-surface2 hover:text-text transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-border2"
           >
-            See How It Works
+            GitHub Repo
+          </a>
+          <a
+            href="https://drive.google.com/file/d/1P7rr3ge4hAPQr1BoXXHOfW__yYliFg0a/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full sm:w-auto border border-border2 text-primary bg-primary/10 text-[15px] font-body font-medium px-8 py-3.5 rounded-full hover:bg-primary/20 transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50"
+          >
+            Watch Demo
           </a>
         </motion.div>
       </div>

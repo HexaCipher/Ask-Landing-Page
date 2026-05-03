@@ -1,6 +1,6 @@
 import { SlideViewer } from "@/components/presentation/SlideViewer";
-import { Slide00TeamIntro, Slide01Hook, Slide02Problem, Slide03MeetAsk, Slide04Comparison } from "@/components/presentation/slides/EarlySlides";
-import { Slide05Architecture, Slide06Features, Slide07Limitations, Slide08Roadmap } from "@/components/presentation/slides/LateSlides";
+import { Slide00TeamIntro, Slide01Hook, Slide02Problem, Slide03MeetAsk, Slide04Comparison, Slide04bTechStack } from "@/components/presentation/slides/EarlySlides";
+import { Slide05Architecture, Slide06Features, Slide07Limitations, Slide08Roadmap, Slide09BusinessModel } from "@/components/presentation/slides/LateSlides";
 
 export const metadata = {
   title: 'Ask - Presentation',
@@ -14,9 +14,11 @@ export default function PresentationPage() {
     Slide02Problem,
     Slide03MeetAsk,
     Slide04Comparison,
+    Slide04bTechStack,
     Slide05Architecture,
     Slide06Features,
     Slide07Limitations,
+    Slide09BusinessModel,
     Slide08Roadmap
   ];
 

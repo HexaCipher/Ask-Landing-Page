@@ -234,3 +234,83 @@ export const Slide08Roadmap = () => {
       </SlideWrapper>
     );
 };
+
+export const Slide09BusinessModel = () => {
+    return (
+      <SlideWrapper>
+         <div className="w-full flex justify-start mb-4 tracking-widest uppercase">
+           <span className="text-green-500 font-mono text-sm">{"// business model"}</span>
+         </div>
+         
+         <div className="w-full flex flex-col pt-2">
+           <h2 className="text-4xl md:text-5xl font-bold font-display mb-10 tracking-tight text-text">
+             Our Monetization Strategy
+           </h2>
+
+           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-6xl mx-auto">
+             
+             {/* Phase 0 */}
+             <div className="bg-surface shadow-[0_1px_3px_rgba(0,0,0,0.05)] border border-border p-6 rounded-2xl flex flex-col h-full relative">
+                <div className="absolute top-0 right-0 p-4 opacity-[0.03]">
+                   <span className="font-mono text-6xl font-bold text-text">0</span>
+                </div>
+                <div className="mb-4">
+                  <span className="px-3 py-1 font-mono text-xs uppercase tracking-widest bg-dim/10 text-dim rounded-full mb-3 inline-block">Phase 0: Current</span>
+                  <h3 className="text-xl font-bold text-text mb-2">BYOK (Bring Your Own Key)</h3>
+                  <p className="text-sm text-dim leading-relaxed">
+                    Users provide their own API keys and pay their provider directly for usage.
+                  </p>
+                </div>
+                <div className="mt-auto p-4 bg-surface2/50 rounded-xl border border-border">
+                  <h4 className="text-xs font-bold font-mono text-text mb-1 flex items-center gap-1 uppercase tracking-wider">The Problem</h4>
+                  <p className="text-xs text-dim leading-relaxed">
+                    Agent quality heavily depends on the user&apos;s chosen model. It works for now, but creates inconsistent experiences.
+                  </p>
+                </div>
+             </div>
+
+             {/* Phase 1 */}
+             <div className="bg-surface shadow-md border border-primary/30 p-6 rounded-2xl flex flex-col h-full relative transform md:-translate-y-2">
+                <div className="absolute top-0 right-0 p-4 opacity-[0.05]">
+                   <span className="font-mono text-6xl font-bold text-primary">1</span>
+                </div>
+                <div className="mb-4">
+                  <span className="px-3 py-1 font-mono text-xs uppercase tracking-widest bg-primary/10 text-primary rounded-full mb-3 inline-block">Phase 1: Next</span>
+                  <h3 className="text-xl font-bold text-text mb-2">Own Inference &amp; OSS</h3>
+                  <p className="text-sm text-dim leading-relaxed">
+                    Hosting top open-source models (Qwen, Kimi, Minmax) which offer a great balance of cost and capability.
+                  </p>
+                </div>
+                <div className="mt-auto p-4 bg-primary/5 rounded-xl border border-primary/20">
+                  <h4 className="text-xs font-bold font-mono text-primary mb-1 flex items-center gap-1 uppercase tracking-wider">Pricing Target</h4>
+                  <p className="text-sm font-bold text-text mb-1">Rs. 1,000 - 1,500 / month</p>
+                  <p className="text-xs text-dim">Predictable premium tier with hosted OSS models.</p>
+                </div>
+             </div>
+
+             {/* Phase 2 */}
+             <div className="bg-surface shadow-[0_1px_3px_rgba(0,0,0,0.05)] border border-border p-6 rounded-2xl flex flex-col h-full relative">
+                <div className="absolute top-0 right-0 p-4 opacity-[0.03]">
+                   <span className="font-mono text-6xl font-bold text-text">2</span>
+                </div>
+                <div className="mb-4">
+                  <span className="px-3 py-1 font-mono text-xs uppercase tracking-widest bg-purple/10 text-purple rounded-full mb-3 inline-block">Phase 2: Future</span>
+                  <h3 className="text-xl font-bold text-text mb-2">Premium Proprietary Tier</h3>
+                  <p className="text-sm text-dim leading-relaxed">
+                    Testing bleeding-edge models like GPT-5.4, GPT-5.5, or Opus 4.7 based on user demand and feedback.
+                  </p>
+                </div>
+                <div className="mt-auto p-4 bg-red-50/50 rounded-xl border border-red-100 dark:bg-red-900/10 dark:border-red-900/30">
+                  <h4 className="text-xs font-bold font-mono text-red-600 mb-1 flex items-center gap-1 uppercase tracking-wider">The Challenge</h4>
+                  <p className="text-sm font-bold text-text mb-1">~ Rs. 4,000 - 5,000 / month</p>
+                  <p className="text-xs text-dim">
+                    Extremely high costs due to steep USD-to-INR conversions. Exact pricing to be decided based on viability.
+                  </p>
+                </div>
+             </div>
+
+           </div>
+         </div>
+      </SlideWrapper>
+    );
+};

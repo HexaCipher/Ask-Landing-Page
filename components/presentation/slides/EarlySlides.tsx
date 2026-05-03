@@ -3,7 +3,7 @@
 import React from "react";
 import { SlideWrapper } from "../SlideViewer";
 import { motion } from "framer-motion";
-import { Lock, Brain, Coins, Zap, Check, X } from "lucide-react";
+import { Lock, Brain, Coins, Zap, Check, X, Code, Layers, Palette, Wrench, Terminal, Database, Globe } from "lucide-react";
 
 export const Slide00TeamIntro = () => {
   return (
@@ -219,6 +219,65 @@ export const Slide04Comparison = () => {
              <p className="text-lg md:text-xl text-dim font-serif leading-relaxed italic relative z-10">
                Other tools give you AI. <span className="font-bold text-primary not-italic font-display text-xl md:text-2xl mx-1">ask</span> gives you an agent that works for you —<br/> not for a company&apos;s training pipeline.
              </p>
+           </div>
+         </div>
+      </SlideWrapper>
+    );
+};
+
+export const Slide04bTechStack = () => {
+    return (
+      <SlideWrapper>
+         <div className="w-full flex justify-start mb-6">
+           <span className="text-dim font-mono text-sm tracking-widest uppercase">{"// tech stack"}</span>
+         </div>
+         
+         <div className="w-full flex flex-col pt-8 space-y-12">
+           <h2 className="text-4xl md:text-6xl font-bold font-display tracking-tight text-text">
+             Built in Go.<br/>
+             <span className="text-primary">Runs everywhere.</span>
+           </h2>
+
+           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-5xl">
+             <div className="bg-surface shadow-sm border border-border p-8 rounded-2xl flex items-start gap-4 hover:-translate-y-1 transition-transform cursor-default">
+                <div className="p-3 bg-blue-500/10 text-blue-500 rounded-xl shrink-0">
+                  <Terminal className="w-6 h-6" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold mb-2 text-text">Core Engine</h3>
+                  <p className="text-dim text-sm leading-relaxed"><strong className="text-text">Go 1.25+</strong><br/>Fast, cross-platform, single-binary architecture with zero bloat.</p>
+                </div>
+             </div>
+
+             <div className="bg-surface shadow-sm border border-border p-8 rounded-2xl flex items-start gap-4 hover:-translate-y-1 transition-transform cursor-default">
+                <div className="p-3 bg-teal-500/10 text-teal-500 rounded-xl shrink-0">
+                  <Database className="w-6 h-6" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold mb-2 text-text">Local Storage & Memory</h3>
+                  <p className="text-dim text-sm leading-relaxed"><strong className="text-text">SQLite &amp; Chromem-go</strong><br/>Persistent SQLite chat history and Chromem local vector DB.</p>
+                </div>
+             </div>
+
+             <div className="bg-surface shadow-sm border border-border p-8 rounded-2xl flex items-start gap-4 hover:-translate-y-1 transition-transform cursor-default">
+                <div className="p-3 bg-purple/10 text-purple rounded-xl shrink-0">
+                  <Brain className="w-6 h-6" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold mb-2 text-text">Intelligence</h3>
+                  <p className="text-dim text-sm leading-relaxed"><strong className="text-text">Gemini API</strong><br/>Powered by Gemma and Gemini Flash with adjustable reasoning levels.</p>
+                </div>
+             </div>
+
+             <div className="bg-surface shadow-sm border border-border p-8 rounded-2xl flex items-start gap-4 hover:-translate-y-1 transition-transform cursor-default">
+                <div className="p-3 bg-orange-500/10 text-orange-500 rounded-xl shrink-0">
+                  <Globe className="w-6 h-6" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold mb-2 text-text">Agent &amp; Integrations</h3>
+                  <p className="text-dim text-sm leading-relaxed"><strong className="text-text">Telegram &amp; Agent Tools</strong><br/>Native Telegram bot, ElevenLabs TTS, AgentMail, and secure shell execution.</p>
+                </div>
+             </div>
            </div>
          </div>
       </SlideWrapper>

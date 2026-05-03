@@ -3,7 +3,7 @@
 import React from "react";
 import { SlideWrapper } from "../SlideViewer";
 import { motion } from "framer-motion";
-import { Lock, Brain, Coins, Zap, Check, X, Code, Layers, Palette, Wrench, Terminal, Database, Globe } from "lucide-react";
+import { Lock, Brain, Coins, Zap, Check, X, Terminal, Database, Globe } from "lucide-react";
 
 export const Slide00TeamIntro = () => {
   return (

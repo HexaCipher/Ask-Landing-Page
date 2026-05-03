@@ -17,9 +17,10 @@ export function Navbar() {
   }, []);
 
   const navLinks = [
-    { name: "Features", href: "#features" },
-    { name: "How it works", href: "#how-it-works" },
-    { name: "Architecture", href: "#architecture" },
+    { name: "Features", href: "/#features" },
+    { name: "How it works", href: "/#how-it-works" },
+    { name: "Architecture", href: "/#architecture" },
+    { name: "Presentation", href: "/presentation" },
   ];
 
   return (

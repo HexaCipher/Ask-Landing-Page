@@ -64,8 +64,8 @@ export const Slide01Hook = () => {
           <span className="text-dim">But does it even know who you are?</span>
         </h2>
         <div className="mt-6 text-xl md:text-2xl text-dim font-light space-y-4 max-w-3xl leading-relaxed text-center mx-auto">
-          <p>Every session starts from zero. Every chat you've ever had — gone.</p>
-          <p>You're not working with an assistant. <br/>You're talking to a very smart stranger. Every. Single. Day.</p>
+          <p>Every session starts from zero. Every chat you&apos;ve ever had — gone.</p>
+          <p>You&apos;re not working with an assistant. <br/>You&apos;re talking to a very smart stranger. Every. Single. Day.</p>
         </div>
       </div>
     </SlideWrapper>
@@ -90,7 +90,7 @@ export const Slide02Problem = () => {
               <div>
                 <h3 className="text-xl font-bold mb-3 text-text flex items-center gap-2"><Lock className="w-5 h-5 text-red-500" /> Your Data Leaves</h3>
                 <p className="text-dim text-sm leading-relaxed">
-                  Everything you type goes to the cloud. Your most sensitive work is someone else's training data.
+                  Everything you type goes to the cloud. Your most sensitive work is someone else&apos;s training data.
                 </p>
               </div>
               <div className="mt-6 p-4 bg-red-50 text-red-600 rounded-lg text-sm font-mono border border-red-100">
@@ -114,7 +114,7 @@ export const Slide02Problem = () => {
               <div>
                 <h3 className="text-xl font-bold mb-3 text-text flex items-center gap-2"><Coins className="w-5 h-5 text-orange-500" /> Locked In</h3>
                 <p className="text-dim text-sm leading-relaxed">
-                  Expensive subscriptions and usage limits. You're renting intelligence you can't own or control.
+                  Expensive subscriptions and usage limits. You&apos;re renting intelligence you can&apos;t own or control.
                 </p>
               </div>
               <div className="mt-6 p-4 bg-orange-50 text-orange-600 rounded-lg text-sm font-mono border border-orange-100">
@@ -151,7 +151,7 @@ export const Slide03MeetAsk = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-5xl text-left border border-border shadow-sm rounded-2xl p-6 bg-surface">
               <div className="flex flex-col gap-2">
                  <h4 className="text-xl font-bold text-text flex items-center gap-2"><Brain className="w-5 h-5 text-purple" /> Remembers</h4>
-                 <p className="text-dim text-sm">Long-term vector memory across every session so you don't repeat yourself.</p>
+                 <p className="text-dim text-sm">Long-term vector memory across every session so you don&apos;t repeat yourself.</p>
               </div>
               <div className="flex flex-col gap-2 border-l border-border pl-6">
                  <h4 className="text-xl font-bold text-text flex items-center gap-2"><Zap className="w-5 h-5 text-yellow-500" /> Acts</h4>

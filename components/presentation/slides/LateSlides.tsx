@@ -166,7 +166,7 @@ export const Slide08Roadmap = () => {
          
          <div className="w-full flex flex-col items-center">
            <h2 className="text-4xl font-bold font-display mb-2 text-center text-text">The terminal is just the beginning.</h2>
-           <p className="text-xl text-dim mb-8 text-center w-full">Here's what Ask becomes next.</p>
+           <p className="text-xl text-dim mb-8 text-center w-full">Here&apos;s what Ask becomes next.</p>
            
            {/* Timeline visualization */}
            <div className="w-full relative py-4 px-4 max-w-6xl">
@@ -227,7 +227,7 @@ export const Slide08Roadmap = () => {
            </div>
 
            <div className="mt-8 md:mt-12 font-serif italic text-lg md:text-xl text-text tracking-widest text-center max-w-3xl opacity-80 px-4">
-              <span className="text-primary">"</span>Every great developer tool started as a script someone wrote for themselves. We're just not keeping it to ourselves.<span className="text-primary">"</span>
+              <span className="text-primary">&quot;</span>Every great developer tool started as a script someone wrote for themselves. We&apos;re just not keeping it to ourselves.<span className="text-primary">&quot;</span>
               <motion.span animate={{ opacity: [1, 0] }} transition={{ repeat: Infinity, duration: 0.8, ease: "linear" }} className="inline-block w-2 md:w-3 h-4 md:h-6 bg-text ml-2 align-middle"></motion.span>
            </div>
          </div>

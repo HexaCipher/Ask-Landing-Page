@@ -13,11 +13,9 @@ This site is designed to communicate the core value of `ask` in seconds:
 ## Preview
 
 - **Live URL:** https://ask-rust.vercel.app/
-- **Screenshot:** add a preview image at `public/preview.png` and reference it below
 
-```md
-![ASK GO Landing Page](public/preview.png)
-```
+![ASK GO Landing Page](./public/preview.png)
+
 
 ## Tech Stack
 

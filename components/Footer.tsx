@@ -1,7 +1,11 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import Image from "next/image";
 
 export function Footer() {
+  const [showEmail, setShowEmail] = useState(false);
+
   return (
     <footer className="border-t border-border bg-bg py-12 px-6 lg:px-10">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
@@ -19,7 +23,16 @@ export function Footer() {
           <a href="https://github.com/HexaCipher/efos-hackathon" target="_blank" rel="noopener noreferrer" className="font-body text-[14px] text-muted hover:text-primary transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50 rounded">GitHub</a>
           <a href="https://github.com/HexaCipher/efos-hackathon/blob/main/LICENSE" target="_blank" rel="noopener noreferrer" className="font-body text-[14px] text-muted hover:text-primary transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50 rounded">MIT License</a>
           <a href="https://github.com/HexaCipher/efos-hackathon/issues" target="_blank" rel="noopener noreferrer" className="font-body text-[14px] text-muted hover:text-primary transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50 rounded">Issues</a>
-          <a href="https://github.com/HexaCipher/efos-hackathon/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer" className="font-body text-[14px] text-muted hover:text-primary transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50 rounded">Contributing</a>
+          <a 
+            href="#" 
+            onClick={(e) => {
+              e.preventDefault();
+              setShowEmail(true);
+            }} 
+            className={`font-body text-[14px] transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50 rounded ${showEmail ? "text-primary pointer-events-none" : "text-primary hover:text-text"}`}
+          >
+            {showEmail ? "zephex@duck.com" : "Contact Us"}
+          </a>
         </nav>
 
         {/* Right */}

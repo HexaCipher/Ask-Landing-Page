@@ -7,6 +7,7 @@ import { Menu, X } from "lucide-react";
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [showEmail, setShowEmail] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -17,11 +18,12 @@ export function Navbar() {
   }, []);
 
   const navLinks = [
-    { name: "Features", href: "/#features", external: false },
-    { name: "How it works", href: "/#how-it-works", external: false },
-    { name: "Architecture", href: "/#architecture", external: false },
-    { name: "Presentation", href: "/presentation", external: false },
-    { name: "Demo Video", href: "https://drive.google.com/file/d/1P7rr3ge4hAPQr1BoXXHOfW__yYliFg0a/view?usp=sharing", external: true },
+    { name: "Features", href: "/#features", external: false, action: null },
+    { name: "How it works", href: "/#how-it-works", external: false, action: null },
+    { name: "Architecture", href: "/#architecture", external: false, action: null },
+    { name: "Presentation", href: "/presentation", external: false, action: null },
+    { name: "Demo Video", href: "https://drive.google.com/file/d/1P7rr3ge4hAPQr1BoXXHOfW__yYliFg0a/view?usp=sharing", external: true, action: null },
+    { name: showEmail ? "zephex@duck.com" : "Contact Us", href: "#", external: false, action: "email" },
   ];
 
   return (
@@ -44,7 +46,13 @@ export function Navbar() {
               href={link.href}
               target={link.external ? "_blank" : undefined}
               rel={link.external ? "noopener noreferrer" : undefined}
-              className="font-body text-[14px] font-medium text-dim hover:text-text transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50 rounded px-2 py-1"
+              onClick={(e) => {
+                if (link.action === "email") {
+                  e.preventDefault();
+                  setShowEmail(true);
+                }
+              }}
+              className={`font-body text-[14px] font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50 rounded px-2 py-1 ${link.action === "email" && showEmail ? "text-primary pointer-events-none" : "text-dim hover:text-text"}`}
             >
               {link.name}
             </a>
@@ -90,8 +98,15 @@ export function Navbar() {
                 href={link.href}
                 target={link.external ? "_blank" : undefined}
                 rel={link.external ? "noopener noreferrer" : undefined}
-                className="font-body text-[15px] font-medium text-dim hover:text-text hover:bg-surface2 px-4 py-3 rounded-lg transition-colors border-b border-border/50 last:border-none"
-                onClick={() => setIsMobileMenuOpen(false)}
+                className={`font-body text-[15px] font-medium px-4 py-3 rounded-lg transition-colors border-b border-border/50 last:border-none ${link.action === "email" && showEmail ? "text-primary pointer-events-none" : "text-dim hover:text-text hover:bg-surface2"}`}
+                onClick={(e) => {
+                  if (link.action === "email") {
+                    e.preventDefault();
+                    setShowEmail(true);
+                  } else {
+                    setIsMobileMenuOpen(false);
+                  }
+                }}
               >
                 {link.name}
               </a>

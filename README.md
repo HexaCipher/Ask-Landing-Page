@@ -12,8 +12,7 @@ This site is designed to communicate the core value of `ask` in seconds:
 
 ## Preview
 
-- **Local URL:** `http://localhost:3000`
-- **Live URL:** add your production link here
+- **Live URL:** https://ask-rust.vercel.app/
 - **Screenshot:** add a preview image at `public/preview.png` and reference it below
 
 ```md
